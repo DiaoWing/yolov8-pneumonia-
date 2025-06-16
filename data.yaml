@@ -1,0 +1,12 @@
+
+# train: /kaggle/input/vinbigdata-yolo-dataset-with-wbf-640px-14class/vinbigdata-yolo-dataset-with-wbf-640px-14class/train.txt
+# val: /kaggle/input/vinbigdata-yolo-dataset-with-wbf-640px-14class/vinbigdata-yolo-dataset-with-wbf-640px-14class/val.txt
+# test: /kaggle/input/vinbigdata-yolo-dataset-with-wbf-640px-14class/vinbigdata-yolo-dataset-with-wbf-640px-14class/test.txt
+
+train: E:/StudyInformation/Eat/habit/lung16_dec/yolo/dataset/train.txt
+val: E:/StudyInformation/Eat/habit/lung16_dec/yolo/dataset/val.txt
+test: E:/StudyInformation/Eat/habit/lung16_dec/yolo/dataset/test.txt
+
+nc: 14
+names: ['Aortic_enlargement', 'Atelectasis', 'Calcification', 'Cardiomegaly', 'Consolidation', 'ILD', 'Infiltration', 'Lung_Opacity', 'Nodule/Mass', 'Other_lesion', 'Pleural_effusion', 'Pleural_thickening', 'Pneumothorax', 'Pulmonary_fibrosis']
+class_weights: [0.3599952128296166, 9.241167434715821, 2.6857142857142855, 0.47508489299534074, 4.637204522096608, 2.5782857142857143, 2.0675907893229466, 1.038375237328117, 0.9993355481727575, 1.170352117242721, 1.0413108700669282, 0.5324836254204284, 11.40834386852086, 0.5538744821236765]

@@ -1,0 +1,8 @@
+# 训练和验证图像的路径
+train: E:/StudyInformation/Eat/habit/lung16_dec/yolo/datasets/images/train/
+val: E:/StudyInformation/Eat/habit/lung16_dec/yolo/datasets/images/val/
+test: E:/StudyInformation/Eat/habit/lung16_dec/yolo/datasets/images_1/test/images
+
+# 类别数量及名称
+nc: 14
+names: ['Aortic_enlargement', 'Atelectasis', 'Calcification', 'Cardiomegaly', 'Consolidation', 'ILD', 'Infiltration', 'Lung_Opacity', 'Nodule/Mass', 'Other_lesion', 'Pleural_effusion', 'Pleural_thickening', 'Pneumothorax', 'Pulmonary_fibrosis']

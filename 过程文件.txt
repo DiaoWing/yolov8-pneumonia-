@@ -1,0 +1,36 @@
+1.处理数据集为yolo格式的文件
+2.先配置data中的data.yaml 文件
+配置已经ok
+
+
+3，git卸载后运行报错
+原因是什么
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet  中文
+
+
+这个错误是因为 GitPython 库无法在你的系统中找到有效的 Git 可执行文件。
+在镜像网站安装GIT，然后添加路径到全局调用即可。
+验证 Git 是否可用
+git --version
+如果返回版本号（如 git version 2.40.1）
+
+2. 修复 GitPython 的环境变量问题
+如果 Git 已安装但 Python 仍找不到它，可以尝试以下方法：
+(A) 设置 GIT_PYTHON_GIT_EXECUTABLE 环境变量
+找到 Git 的可执行文件路径（通常是 C:\Program Files\Git\bin\git.exe），然后在 Python 中运行：
+import os
+os.environ["GIT_PYTHON_GIT_EXECUTABLE"] = "C:\\Program Files\\Git\\bin\\git.exe"
+
+(B) 在代码中显式指定 Git 路径
+import git
+git.refresh("C:\\Program Files\\Git\\bin\\git.exe")
+
+3，在path中，添加git路径
+确保 Git 的 bin 目录（如 C:\Program Files\Git\bin）已添加到系统的 PATH 中。
